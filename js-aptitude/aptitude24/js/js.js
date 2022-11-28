@@ -1,9 +1,10 @@
-var x=prompt("enter the percentage");
-x=parseInt(x);
-var a=prompt("enter a value");
-a=parseInt(a);
-var x1=100-x;
-var z=a*100;
-var y=z/x1;
-alert(y);
-
+var speedoftrain1=prompt("enter the speed of the train1");
+var speedoftrain=8;
+var distance=prompt("enter distance");
+distance=parseInt(distance);
+speedoftrain1=parseInt(speedoftrain1-speedoftrain);
+var speed;
+var speed=speedoftrain1*5/18;
+var time;
+var time=distance*(1/speed);
+alert(time);
