@@ -1,0 +1,10 @@
+var p = prompt("Enter profit value");
+p = parseInt(p);
+var r1 = prompt("Enter rate1 value");
+r1 = parseInt(r1);
+var r2 = prompt("Enter rate2 value");
+r2 = parseInt(r2);
+var r3 = prompt("Enter rate3 value");
+r3 = parseInt(r3);
+var x=(p*[1+r1/100]*[1-r2/100]*[1+r3/100]);
+alert(x);

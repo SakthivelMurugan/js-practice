@@ -1,0 +1,10 @@
+var average=parseInt(prompt("Enter the average age value"));
+var years=parseInt(prompt("Enter how many years"));
+var teacher=parseInt(prompt("Enter how many teacher"));
+var b=parseInt(prompt("Enter the years_teacher"));
+var a=average+teacher;
+var sum=years+b;
+var age=average*years;
+var x=a*sum;
+var z=x-age;
+alert(z);

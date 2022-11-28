@@ -1,0 +1,10 @@
+var sugar=prompt("eneter the qualityofsugar");
+sugar=parseFloat(sugar/100);
+var liters=prompt("enter liters");
+liters=parseFloat(liters);
+var quality;
+var quality=sugar*liters;
+var percentage;
+var addedoneliters=liters+1;
+var percentage=(quality/addedoneliters)*100;
+alert(percentage);

@@ -1,0 +1,10 @@
+var speedoftrain1=prompt("enter the speed of the train1");
+var speedoftrain=8;
+var distance=prompt("enter distance");
+distance=parseInt(distance);
+speedoftrain1=parseInt(speedoftrain1-speedoftrain);
+var speed;
+var speed=speedoftrain1*5/18;
+var time;
+var time=distance*(1/speed);
+alert(time);

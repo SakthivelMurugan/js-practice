@@ -1,0 +1,14 @@
+var male_count=prompt("Enter male_count value");
+male_count=parseInt(male_count);
+var female_count=prompt("Enter female_count value");
+female_count=parseInt(female_count);
+var children_count=prompt("enter children_count value");
+children_count=parseInt(children_count);
+var male_one=prompt("Enter male value");
+male_one=parseInt(male_one);
+var female_two=prompt("Enter female value");
+female_two=parseInt(female_two);
+var children=prompt("enter children value");
+children=parseInt(children);
+var z=(((male_one*male_count)+(female_two*female_count)+(children*children_count))/(male_count+female_count+children_count));
+alert(z);

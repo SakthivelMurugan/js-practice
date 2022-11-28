@@ -1,0 +1,10 @@
+var apple=prompt("enter the apple");
+apple=parseInt(apple);
+var sells=prompt("enter the sells");
+sells=parseInt(sells);
+var totalsells=100;
+var selling=totalsells-sells;
+var price=parseFloat(selling/100);
+var price=x;
+var x=apple*100/selling;
+alert(x);

@@ -1,0 +1,10 @@
+var speed1=prompt("Enter speed");
+speed1=parseInt(speed1);
+var time=prompt("Enter time");
+time=parseInt(time);
+var time2=prompt("Enter same distance in hours");
+time2=parseFloat(time2);
+var distance=speed1*time;
+var speed2=distance/time2;
+var increased_speed=speed2-speed1;
+alert(increased_speed);
