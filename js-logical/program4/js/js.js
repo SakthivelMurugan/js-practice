@@ -1,7 +1,9 @@
-var dis=prompt("enter distance");
-var time=prompt("enter time");
-var speed;
-dis=parseInt(dis);
-time=parseInt(time);
-speed=dis/time;
-alert(speed);
+var number=parseInt(prompt("ente number :"));
+if(number%2!=0)
+{
+	document.write(number+" is odd");
+}
+else
+{
+	document.write(number+" is even");
+}

@@ -1,7 +1,10 @@
-var dis=prompt("enter distance");
-var time=prompt("enter time");
-var speed;
-dis=parseInt(dis);
-time=parseInt(time);
-speed=dis/time;
-alert(speed);
+var n=prompt("enter number");
+n=n.toString();
+l=n.length
+n=parseInt(n);
+for(let i=1;i<=l;i++)
+{
+	document.write(n%10);
+	n=(n-(n%10))/10;
+	n=parseInt(n);
+}

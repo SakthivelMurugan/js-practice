@@ -1,13 +1,27 @@
-var number=parseInt(prompt("enter no to check :"));
-if(number>0)
+var items=parseInt(prompt("enter no of items :"));
+ar=[]
+for(i=0;i<items;i++)
 {
-	document.write(number+" is positive number");
+	j=i+1
+	var a=parseInt(prompt("enter item "+j+" of array"));
+	ar.push(a);
 }
-else if(number==0)
+for(i=0;i<ar.length;i++)
 {
-	document.write(number+" is zero");
-}
-else
-{
-	document.write(number+" is negative number");
+	if(ar[i]>0)
+	{
+		document.write(ar[i]+" is positive number"+"<br>");
+	}
+	else if(ar[i]==0)
+	{
+		document.write(ar[i]+" is zero"+"<br>");
+	}
+	else if(ar[i]<0)
+	{
+		document.write(ar[i]+" is negative number"+"<br>");
+	}
+	else
+	{
+		document.write("Not a number <br>")
+	}
 }

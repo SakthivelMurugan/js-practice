@@ -1,7 +1,9 @@
-var dis=prompt("enter distance");
-var time=prompt("enter time");
-var speed;
-dis=parseInt(dis);
-time=parseInt(time);
-speed=dis/time;
-alert(speed);
+var number=parseInt(prompt("ente number :"));
+if(number%5==0)
+{
+	document.write(number+" is divisible by 5");
+}
+else
+{
+	document.write(number+" is not divisible by 5");
+}

@@ -1,7 +1,5 @@
-var dis=prompt("enter distance");
-var time=prompt("enter time");
-var speed;
-dis=parseInt(dis);
-time=parseInt(time);
-speed=dis/time;
-alert(speed);
+var limit=parseInt(prompt("enter limit :"));
+for(i=limit;i>0;i--)
+{
+	document.write(i+"<br>")
+}

@@ -1,7 +1,6 @@
-var dis=prompt("enter distance");
-var time=prompt("enter time");
-var speed;
-dis=parseInt(dis);
-time=parseInt(time);
-speed=dis/time;
-alert(speed);
+var num=parseInt(prompt("enter which table :"));
+var limit=parseInt(prompt("enter limit "));
+for(i=1;i<=limit;i++)
+{
+	document.write(num*i+"<br>")
+}
