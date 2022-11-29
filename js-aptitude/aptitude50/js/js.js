@@ -1,0 +1,18 @@
+var a=prompt("enter month_first value");
+a=parseInt(a);
+var b=prompt("enter month_second value");
+b=parseInt(b);
+var c=prompt("enter month_third value");
+c=parseInt(c);
+var d=prompt("enter month_four value");
+d=parseInt(d);
+var e=prompt("enter month_five value");
+e=parseInt(e);
+var f=prompt("enter month_six value");
+f=parseInt(f);
+var month=prompt("enter  last month?");
+month=parseInt(month);
+var x=a+b+c+d+e;
+var y=f*month;
+var z=y-x;
+alert(z);
