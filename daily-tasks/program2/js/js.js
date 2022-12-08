@@ -1,0 +1,36 @@
+ar=[1,2,3,4,5,6,6,5,4,3,2,1]
+function fun(ar)
+{
+for(i=0;i<ar.length-1;i++)
+{
+	j=i+1
+	while(ar[i]<ar[j])
+	{
+		j+=1
+			if(j==ar.length)
+			{
+				ar[i]=ar[i];
+				i=i+1
+				if(i!=ar.length-1)
+				{
+					j=i+1
+				}
+				else
+				{
+					j=i
+				}
+			}
+	}
+	if(ar[i]>ar[j])
+	{
+		temp=ar[i];
+		ar[i]=ar[j];
+		ar[j]=temp;
+		i=i-1
+	}
+}
+br=ar.slice(0,ar.length);
+}
+fun(ar);
+fun(br);
+document.write(br);

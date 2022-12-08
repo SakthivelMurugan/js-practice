@@ -1,0 +1,70 @@
+body
+{
+	background-color:lightblue;
+	margin:300px;
+    border:3px solid black;
+	padding:20px;
+	padding-bottom:70px;
+}
+h1
+{
+	color:brown;
+    font-size:160%;
+	padding:5px;
+   
+}
+h2
+{
+	color:purple;
+    font-size:140%;
+	padding:5px;
+   
+}
+li
+{
+	list-style-type:square;
+	color:purple;
+	padding:5px;
+	margin-left:20px;
+	
+}
+span
+{
+	color:black;
+}
+h3
+{
+	color:blue;
+    font-size:120%;
+	padding:5px;
+   
+}
+a
+{
+	color:black;
+	font-size:15px;
+	padding:5px;
+}
+th
+{
+	color:blue;
+    font-size:120%;
+	padding:5px;
+ 
+}
+p
+{
+	color:black;
+    font-size:100%;
+	padding:5px;
+}
+td
+{
+	color:black;
+    font-size:100%;
+	padding:5px;
+}
+
+table, th, td {
+  border:1px solid black;
+}
