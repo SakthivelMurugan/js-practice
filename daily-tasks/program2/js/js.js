@@ -1,6 +1,56 @@
-ar=[1,2,3,4,5,6,6,5,4,3,2,1]
-function fun(ar)
+//sort the array to descending order
+
+var limit=parseInt(prompt("enter limit :"));
+var ar=[];
+for(i=0;i<limit;i++)
 {
+	j=i+1;
+	item=parseInt(prompt("enter item "+j))
+	ar.push(item);
+}
+
+br=[];
+for(i=0;i<ar.length&&ar.length!=0;i++)
+{
+	if(ar.length==1)
+	{
+		br.push(ar[i]);
+		ar.splice(i,1);
+	}
+	else
+	{
+		j=i+1
+		while(ar[i]>=ar[j])
+		{
+			j=j+1
+			if(j==ar.length)
+			{
+				br.push(ar[i]);
+				ar.splice(i,1);
+				i=-1;
+			}
+		}
+		if(ar[i]<ar[j])
+		{
+			temp=ar[i];
+			ar[i]=ar[j];
+			ar[j]=temp;
+			i=-1;
+		}
+	}
+}
+document.write(br);
+
+
+
+/*var limit=parseInt(prompt("enter limit :"));
+var ar=[];
+for(i=0;i<limit;i++)
+{
+	j=i+1;
+	item=parseInt(prompt("enter item "+j))
+	ar.push(item);
+}
 for(i=0;i<ar.length-1;i++)
 {
 	j=i+1
@@ -29,8 +79,4 @@ for(i=0;i<ar.length-1;i++)
 		i=i-1
 	}
 }
-br=ar.slice(0,ar.length);
-}
-fun(ar);
-fun(br);
-document.write(br);
+document.write(ar);*/
