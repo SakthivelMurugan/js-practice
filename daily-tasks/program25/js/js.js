@@ -51,18 +51,13 @@ but.onclick=function()
 	var bool=true;
 	for(number=1;number<=range;number++)
 	{
-		var output=document.createElement("p");
-		output.setAttribute("id","output");
-		output.style.display="flex";
-		output.style.flexDirection="column";
-		output.style.justifyContent="center";
-		output.style.alignItems="center";
-		output.style.color="teal";
-		output.style.margin="10px";
-		cflex.appendChild(output);
-		if(number>2)
+		if(number==1)
 		{
-			for(i=2;i<number;i++)
+			bool=false;
+		}
+		else if(number>1)
+		{
+			for(i=2;i<=number/2;i++)
 			{
 				if(number%i==0)
 				{
@@ -72,12 +67,30 @@ but.onclick=function()
 		}
 		if(bool)
 		{
+			var output=document.createElement("p");
+			output.setAttribute("id","output");
+			output.style.display="flex";
+			output.style.flexDirection="column";
+			output.style.justifyContent="center";
+			output.style.alignItems="center";
+			output.style.color="teal";
+			output.style.margin="10px";
+			cflex.appendChild(output);
 			output.innerHTML=number+" is a prime number";
 		}
-		else
+		/*else
 		{
+			var output=document.createElement("p");
+			output.setAttribute("id","output");
+			output.style.display="flex";
+			output.style.flexDirection="column";
+			output.style.justifyContent="center";
+			output.style.alignItems="center";
+			output.style.color="teal";
+			output.style.margin="10px";
+			cflex.appendChild(output);
 			output.innerHTML=number+" is not a prime number";
-		}
+		}*/
 		bool=true;
 	}
 }
@@ -90,8 +103,7 @@ clear.style.borderRadius="40%";
 clear.style.backgroundColor="aqua";
 clear.onclick=function()
 {
-	document.getElementById('input').value = ' ';
-	document.getElementById('cflex').innerText = ' ';
+	location.reload();
 }
 
 

@@ -80,3 +80,18 @@ for(i=0;i<ar.length-1;i++)
 	}
 }
 document.write(ar);*/
+
+
+/*for(i=0;i<ar.length;i++)
+{
+	for(j=0;j<ar.length;j++)
+	{
+		if(ar[j]<ar[j+1])
+		{
+			temp=ar[j];
+			ar[j]=ar[j+1];
+			ar[j+1]=temp;
+		}
+	}
+}
+document.write(ar);*/
