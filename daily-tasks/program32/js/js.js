@@ -18,5 +18,5 @@
 //x = Math.max(76,78,98);
 //x = Math.min(76,78);
 //x = Math.log(7);
-x = Math.fround(7);
+//x = Math.fround(7);
 document.write(x);
