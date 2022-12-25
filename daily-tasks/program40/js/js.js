@@ -10,7 +10,7 @@ but.onclick=function()
 	var str2="";
 	for(i=0;i<str.length;i++)
 	{
-		if(str.charAt(i)>='a'||str.charAt(i)>='A')
+		if((str.charAt(i)>='a'&&str.charAt(i)<='z')||(str.charAt(i)>='A'&&str.charAt(i)<='Z')||str.charAt(i)>=0)
 		{
 			str2+=str.charAt(i);
 		}

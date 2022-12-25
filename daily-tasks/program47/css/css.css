@@ -1,0 +1,45 @@
+.f
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+	background-color:teal;
+}
+.f .d
+{
+	margin:10px;
+	font-size:100px;
+	color:khaki;
+}
+.f .i
+{
+	margin:50px;
+	text-align:center;
+}
+.f .b
+{
+	height:30px;
+	width:60px;
+	color:black;
+	border:2px solid khaki;
+	border-radius:40%;
+	margin:50px;
+	background-color:khaki;
+	font-size:20px;
+}
+.f .f1
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:30%;
+	height:60px;
+	background-color:white;
+	margin:20px;
+	font-size:60px;
+	color:teal;
+}
