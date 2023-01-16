@@ -1,0 +1,69 @@
+a=[10,12,7,7,3,16,5,12,13,16]
+//[10,3,5,13]
+/*b=[]
+for(i=0;i<a.length;i++)
+{
+	j=i+1;
+	if(i==a.length-1)
+	{
+		b.push(a[i])
+	}
+	while(a[i]!=a[j]&&j!=a.length)
+	{
+		j++;
+		if(j==a.length)
+		{
+			b.push(a[i])
+		}
+	}
+	if(a[i]==a[j]&&j!=a.length)
+	{
+		a.splice(j,1)
+		a.splice(i,1)
+		i--;
+	}
+}
+console.log(b)
+console.log(a)
+
+
+/*b=[]
+for(i=0;i<a.length;i++)
+{	
+	count=0;
+	for(j=0;j<a.length;j++)
+	{
+		if(a[i]==a[j])
+		{
+			count++;
+		}
+	}
+	if(count==1)
+	{
+		b.push(a[i])
+	}
+}
+console.log(b)*/
+
+a=[20,3,20,3,5,6,5,5,5,3,1]
+b=[]
+for(i=0;i<a.length;i++)
+{
+	
+	for(j=0;j<b.length;j++)
+	{	
+		if(a[i]==b[j])
+		{	
+			j=b.length
+		}
+		else if(a[i]!=b[j]&&j==b.length-1)
+		{
+			b.push(a[i])
+		}
+	}
+	if(b.length==0)
+	{
+		b.push(a[i])
+	}
+}
+console.log(b)

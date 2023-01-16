@@ -1,0 +1,21 @@
+a=[1,2,3,4,5,6,7,8,9,10]
+odd=[]
+even=[]
+for(i=0;i<a.length;i++)
+{
+	if(i%2==0)
+	{
+		even.push(a[i])
+	}
+	else
+	{
+		odd.push(a[i])
+	}
+}
+a=[]
+for(i=0;i<odd.length;i++)
+{
+	a.push(odd[i])
+	a.push(even[i])
+}
+console.log(a)
